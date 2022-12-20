@@ -1,5 +1,5 @@
 # CTF WriteUps
-Hehee, just a place for my writeups...
+Hehee, just a place for my CTF writeups...
 
 ## 2022
 
