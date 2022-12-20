@@ -1,6 +1,6 @@
 # exchanged
 
-![exchanged](./_img/3.png)
+![exchanged](../_img/3.png)
 
 ```python
 from Crypto.Util.number import *
@@ -58,11 +58,11 @@ print(iv.hex() + cipher.encrypt(pad(flag, 16)).hex())
 
 Nhìn sơ qua cách encrypt thì giống [Diffie-Hellman](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange) nhưng mà thực hiện bằng ... LCG
 
-![DH like LCG](./_img/3_1.png)
+![DH like LCG](../_img/3_1.png)
 
 Ta có thể check và thấy ngay p - 1 smooth tuy nhiên ta cũng không cần nó để giải DLP nếu như chịu khó biến đổi LCG lại cho dễ tính toán hơn...
 
-![new LCG](./_img/3_2.png)
+![new LCG](../_img/3_2.png)
 
 ### solution
 
@@ -96,4 +96,4 @@ print(f'[+] Flag: {flag}')
 
 Hehe bài này nhanh tay ăn được first blood nè :>
 
-![first blood](./_img/3_fb.png)
+![first blood](../_img/3_fb.png)

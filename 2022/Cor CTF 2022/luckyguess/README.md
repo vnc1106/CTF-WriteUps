@@ -1,6 +1,6 @@
 # luckyguess
 
-![luckyguess](./_img/2.png)
+![luckyguess](../_img/2.png)
 
 ```python
 #!/usr/local/bin/python

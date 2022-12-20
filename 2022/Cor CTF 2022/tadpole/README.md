@@ -1,6 +1,6 @@
 # tadpole
 
-![tadpole](./_img/1.png)
+![tadpole](../_img/1.png)
 
 Đầu tiên đọc qua source...
 
@@ -30,7 +30,7 @@ print("f(f(31337)) = ", f(f(31337)))
 
 đề cho ta hàm đồng dư tuyến tính f (biết luôn a, b) và 2 điểm tương ứng. Vậy ta dễ dàng tìm được flag (modulus p) dựa vào tính chất sau
 
-![sol](./_img/1_1.png)
+![sol](../_img/1_1.png)
 
 ### solution
 

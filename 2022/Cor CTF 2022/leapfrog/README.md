@@ -1,6 +1,6 @@
 # leapfrog
 
-![leapfrog](./_img/6.png)
+![leapfrog](../_img/6.png)
 
 Lại là LCG, nhưng lần này khó ăn hơn...
 
@@ -44,23 +44,23 @@ print(iv.hex() + cipher.encrypt(pad(flag, 16)).hex())
 
 Nhiệm vụ của ta là tìm lại các tham số a, b, p từ các output được leak theo tự ngẫu nhiên của hàm LCG. Đầu tiên ta tính "vị trí" của các số được leak đối với output của hàm LCG.
 
-![jumps](./_img/6_1.png)
+![jumps](../_img/6_1.png)
 
 ### recovering p
 
 Ta thử xây dựng các đẳng thức liên hệ giữa các output được leak...
 
-![p](./_img/6_p.png)
+![p](../_img/6_p.png)
 
 từ các đẳng thức vừa tìm được, dễ dàng tìm được p...
 
-![p1](./_img/6_p1.png)
+![p1](../_img/6_p1.png)
 
 ### recovering a and b
 
 Có được p ta dễ dàng tìm được c từ đó dễ dàng tìm được a và b...
 
-![ab](./_img/6_ab.png)
+![ab](../_img/6_ab.png)
 
 ### solution
 

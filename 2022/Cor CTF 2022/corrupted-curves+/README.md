@@ -1,8 +1,8 @@
 # corrupted-curves+
 
-![corrupted-curves](./_img/9.png)
+![corrupted-curves](../_img/9.png)
 
-![corrupted-curves+](./_img/8.png)
+![corrupted-curves+](../_img/8.png)
 
 Sau khi giải bài corrupted-curves+ thì mình thấy lời giải có thể dùng cho bài corrupted-curves được luôn, nên mình sẽ chỉ trình bày cách tổng quát...
 
@@ -115,21 +115,21 @@ print("bye!")
 
 Ý tưởng chung của 2 bài là, đầu tiên sinh bộ (a, b, p: prime) (trong đó ta chỉ biết p) dùng làm tham số cho EllipticCurve sao cho có 1 điểm nào đó thuộc Curve có tọa độ x đúng bằng flag. Sau đó mình được biết các bộ (x, y, e) thuộc "fake curve" (bài đầu thì mình được chọn x còn bài sau thì x được sinh random)
 
-![real-fake](./_img/8_curve.png)
+![real-fake](../_img/8_curve.png)
 
 Ta thử biến đổi một chút...
 
-![cal](./_img/8_1.png)
+![cal](../_img/8_1.png)
 
 ### Closest vector problem
 
 Biến đổi thêm xíu nữa... dưới góc nhìn lattice...
 
-![lattice](./_img/8_lt.png)
+![lattice](../_img/8_lt.png)
 
 Vậy ý tưởng đã rõ ràng... [Closest vector problem!](https://en.wikipedia.org/wiki/Lattice_problem) ta sẽ tìm được a...
 
-![cvp](./_img/8_cvp.png)
+![cvp](../_img/8_cvp.png)
 
 
 ```python

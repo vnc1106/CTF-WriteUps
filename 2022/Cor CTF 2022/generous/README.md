@@ -1,6 +1,6 @@
 # generous
 
-![generous](./_img/5.png)
+![generous](../_img/5.png)
 
 Ngủ một giấc rồi xem...sao
 
@@ -51,7 +51,7 @@ while True:
 
 Đọc qua cách encrypt thì mình phát hiện đây là [Okamoto–Uchiyama cryptosystem](https://en.wikipedia.org/wiki/Okamoto%E2%80%93Uchiyama_cryptosystem), ta chú ý một tính chất thú vị sau
 
-![pro](./_img/5_pro.png)
+![pro](../_img/5_pro.png)
 
 Bài này biết được bộ public key (n, g, h), vậy ta có thể tự encrypt được. Hơn nữa ta cũng được phép decrypt nhưng chỉ biết được... bit cuối của kết quả.
 
@@ -59,7 +59,7 @@ Bài này biết được bộ public key (n, g, h), vậy ta có thể tự enc
 
 Ta thử sử dụng tính chất homomorphic với LSB orcale để khai thác thông tin từ flag... (chú ý ta dùng LSB oracle và biết được flag lẻ)
 
-![oracle](./_img/5_oracle.PNG)
+![oracle](../_img/5_oracle.PNG)
 
 Từ đó ta hoàn toàn brute được từng bit của flag...
 

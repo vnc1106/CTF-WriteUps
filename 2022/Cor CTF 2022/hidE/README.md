@@ -1,6 +1,6 @@
 # hidE
 
-![hidE](./_img/4.png)
+![hidE](../_img/4.png)
 
 Cuối cùng cũng có bài RSA...
 
@@ -15,7 +15,7 @@ p, q = getPrime(512), getPrime(512)
 n = p * q
 phi = (p - 1) * (q - 1)
 
-flag = open('./flag.txt').read().encode()
+flag = open('../flag.txt').read().encode()
 
 random.seed(int(time.time()))
 
@@ -58,7 +58,7 @@ if __name__ == '__main__':
 
 Đúng như tên đề bài, ta biết trước modulus n, và có thể tự encrypt được (kể cả flag) nhưng điều... thú vị ở đây là ta không biết được public exponent e. Nhưng một điều cần chú ý là e là số random theo seed là current time nên ta hoàn toàn brute seed để tìm được e từ đó áp dụng common modulus attack để tìm flag
 
-![common modulus attack](./_img/4_rsa.png)
+![common modulus attack](../_img/4_rsa.png)
 
 ### solution
 

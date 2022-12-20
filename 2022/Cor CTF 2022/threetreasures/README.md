@@ -1,6 +1,6 @@
 # threetreasures
 
-![three](./_img/7.png)
+![three](../_img/7.png)
 
 Bài ECC đầu tiên...
 
@@ -43,7 +43,7 @@ print(f"G = {G}")
 
 Ta được biết thêm tọa độ của điểm G thuộc Curve, điều thú vị là order của nó bằng 3...
 
-![double](./_img/7_db.png)
+![double](../_img/7_db.png)
 
 Vậy ta đã thiết lập được phương trình nhận a làm nghiệm theo modulus p. Để ý a có 125 bits (thậm chí ta còn biết thêm một số bits đầu của a do b'corctf{') và ta biết n là bội của p nên dùng coppersmith ta dễ dàng tính được a, có a thì mọi chuyện gần như đã xong...
 
