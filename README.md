@@ -1,6 +1,10 @@
 # CTF WriteUps
 Hehee, just a place for my CTF writeups...
 
+## 2021
+
+* [Crypto CTF](./2021/CryptoCTF%202021/)
+
 ## 2022
 
 * [Aero CTF](/2022/Aero%20CTF%202022/)
