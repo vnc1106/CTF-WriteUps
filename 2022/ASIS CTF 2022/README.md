@@ -2,7 +2,7 @@
 
 ## Crypto
 
-* [Binned](/Binned/)
-* [Chaffymasking](/Chaffymasking/)
-* [Mariana](/Mariana/)
-* [Mindseat](/Mindseat/)
+* [Binned](./Binned/)
+* [Chaffymasking](./Chaffymasking/)
+* [Mariana](./Mariana/)
+* [Mindseat](./Mindseat/)
