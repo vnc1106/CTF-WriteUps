@@ -1,4 +1,4 @@
-# Write up ASCIS CTF 2022 - QUALS
+# ASCIS CTF 2022 - QUALS
 
 ## Crypto
 
