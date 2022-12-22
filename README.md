@@ -10,6 +10,7 @@ Hehee, just a place for my CTF writeups...
 * [Aero CTF](/2022/Aero%20CTF%202022/)
 * [ASCIS CTF](/2022/ASCIS%20CTF%202022/)
 * [ASIS CTF](/2022/ASIS%20CTF%202022/)
+* [BlueHens CTF](./2022/BlueHens%20CTF%202022/)
 * [CorCTF](/2022/Cor%20CTF%202022/)
 * [Google CTF](/2022/Google%20CTF%202022/)
 * [HCMUS CTF](/2022/HCMUS%20CTF%202022/)
