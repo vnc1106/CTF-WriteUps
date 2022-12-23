@@ -9,6 +9,7 @@ Hehee, just a place for my CTF writeups...
 ## 2021
 
 * [Crypto CTF](./2021/CryptoCTF%202021/)
+* [Pico CTF](./2021/picoCTF%202021/)
 
 ## 2022
 
