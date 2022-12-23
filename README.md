@@ -23,5 +23,6 @@ Hehee, just a place for my CTF writeups...
 * [ISITDTU CTF](/2022/ISITDTU%20CTF%202022/)
 * [Just CTF](/2022/Just%20CTF%202022/)
 * [Pico CTF](/2022/PicoCTF%202022/)
+* [US Cyber Open CTF](./2022/US%20Cyber%20Open%20CTF%202022/)
 * [WhiteHat Wargame](/2022/WhiteHat%20Wargame%202022/)
 * [WMCTF](/2022/WMCTF%202022/)
