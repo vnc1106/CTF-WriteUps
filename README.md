@@ -26,3 +26,7 @@ Hehee, just a place for my CTF writeups...
 * [US Cyber Open CTF](./2022/US%20Cyber%20Open%20CTF%202022/)
 * [WhiteHat Wargame](/2022/WhiteHat%20Wargame%202022/)
 * [WMCTF](/2022/WMCTF%202022/)
+
+## Practice
+
+* [Exploit Education](./Practice/Exploite%20Education/)
