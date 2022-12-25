@@ -3,11 +3,13 @@ Hehee, just a place for my CTF writeups...
 
 ## 2020
 
+* [CorCTF](./2021/CorCTF%202021/)
 * [Square CTF](./2020/Square%20CTF%202020/)
 * [Crypto CTF](./2020/Crypto%20CTF%202020/)
 
 ## 2021
 
+* [CorCTF](./2021/CorCTF%202021/)
 * [Crypto CTF](./2021/CryptoCTF%202021/)
 * [Pico CTF](./2021/picoCTF%202021/)
 
