@@ -8,4 +8,5 @@
 * [babyrsa](./babyrsa/)
 * [dividing secrets](./dividing%20secrets/)
 * [fibinary](./fibinary/)
+* [leave_it_to_chance](./leave_it_to_chance/)
 * [supercomputer](./supercomputer/)
