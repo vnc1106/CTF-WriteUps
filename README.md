@@ -20,7 +20,7 @@ Hehee, just a place for my CTF writeups...
 * [ASIS CTF](/2022/ASIS%20CTF%202022/)
 * [BlueHens CTF](./2022/BlueHens%20CTF%202022/)
 * [CorCTF](/2022/Cor%20CTF%202022/)
-* [DownUnderCTF](./2022/DownUnder%20CTF%202022)
+* [DownUnder CTF](./2022/DownUnder%20CTF%202022)
 * [Google CTF](/2022/Google%20CTF%202022/)
 * [HCMUS CTF](/2022/HCMUS%20CTF%202022/)
 * [ISITDTU CTF](/2022/ISITDTU%20CTF%202022/)
@@ -29,7 +29,3 @@ Hehee, just a place for my CTF writeups...
 * [US Cyber Open CTF](./2022/US%20Cyber%20Open%20CTF%202022/)
 * [WhiteHat Wargame](/2022/WhiteHat%20Wargame%202022/)
 * [WMCTF](/2022/WMCTF%202022/)
-
-## Practice
-
-* [Exploit Education](./Practice/Exploite%20Education/)
