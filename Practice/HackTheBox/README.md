@@ -1,0 +1,25 @@
+# HackTheBox Challenges
+
+[see here](https://app.hackthebox.com/challenges)
+
+## Pwnable
+
+* [racecar](./Pwnable/racecar/)
+* [Restaurant](./Pwnable/Restaurant/)
+* [Sick ROP](./Pwnable/Sick ROP/)
+* [You know 0xD](./Pwnable/You know 0xDiablos/)
+
+## Crypto
+
+* [Baby Time Capsule](./Crypto/Baby%20Time%20Capsule/)
+* [BabyEncryption](./Crypto/BabyEncryption/)
+* [RsaCtfTool](./Crypto/RsaCtfTool/)
+* [Flippin Bank](./Crypto/Flippin%20Bank/)
+* [TwoForOne](./Crypto/TwoForOne/)
+* [xorxorxor](./Crypto/xorxorxor/)
+* [Nuclear Sale](./Crypto/Nuclear%20Sale/)
+* [RSAisEasy](./Crypto/RSAisEasy/)
+* [The last Dance](./Crypto/The%20last%20Dance/)
+* [Optimus Prime](./Crypto/Optimus%20Prime/)
+* [RLotto](./Crypto/RLotto/)
+* [Lost Modulus](./Crypto/Lost%20Modulus/)
