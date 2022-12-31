@@ -6,8 +6,8 @@
 
 * [racecar](./Pwnable/racecar/)
 * [Restaurant](./Pwnable/Restaurant/)
-* [Sick ROP](./Pwnable/Sick ROP/)
-* [You know 0xD](./Pwnable/You know 0xDiablos/)
+* [Sick ROP](./Pwnable/Sick%20ROP/)
+* [You know 0xD](./Pwnable/You%20know%200xDiablos/)
 
 ## Crypto
 
