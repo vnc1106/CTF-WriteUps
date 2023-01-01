@@ -33,3 +33,4 @@ Hehee, just a place for my CTF writeups...
 # Practice
 
 * [HackTheBox](./Practice/HackTheBox/)
+* [Pwnable](./Practice/Pwnable/)
