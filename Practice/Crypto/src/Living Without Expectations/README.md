@@ -1,10 +1,41 @@
-# Living Without Expectations
+# Living Without Expectations (10 solves 492 points)
 
+> **Description**\
 > `Sometimes you just gotta have some fun implementing bare hardness assumptions.`\
-> **(10 solves, 492 points)**\
-> **Attachmets: [lwe.py](./challenge/lwe.py) [output.txt](./challenge/output.txt)**
+>
+> **Attachmets**\
+> **[lwe.py](./challenge/lwe.py) [output.txt](./challenge/output.txt)**
 
 ## Challenge overview
+
+**`lwe.py:`**
+```python
+import numpy as np
+import secrets
+
+def rand(seed):
+    seeds = [(seed >> (3 * i)) & 7 for i in range(nseeds)]
+    a = 5
+    b = 7
+    while True:
+        for i in range(nseeds):
+            seeds[i] = (a * seeds[i] + b) & 7
+            yield seeds[i]
+
+q = 2**142 + 217
+n = 69
+nseeds = 142
+rng = rand(secrets.randbits(3 * nseeds))
+with open("flag.txt", "rb") as f:
+    flag = f.read().strip()
+bits = f'{int.from_bytes(flag, "big"):0{len(flag) * 8}b}'
+s = np.array([secrets.randbits(1) for _ in range(n)])
+
+for bit in map(int, bits):
+    A = np.array([secrets.randbelow(q) for _ in range(n * n)]).reshape((n, n))
+    b = [A @ s + np.array([next(rng) for _ in range(n)]), np.array([secrets.randbelow(q) for _ in range(n)])][bit]
+    print(list(map(hex, A.reshape(-1))), list(map(hex, b % q)))
+```
 
 The script generates a secret $69$-dimension vector $s$ with elements $0$ or $1$. They encrypt the flag by looping for each bit of the flag:
 * Firstly, generate a random $69 \times 69$ matrix $A$, with elements $< q$.
@@ -59,4 +90,58 @@ $$b - A \times s \qquad \text{(mod q})$$
 
 is a small vector or not!
 
-[Final script](./sol.py)
+## Final script
+
+**`sol.py:`**
+```python
+from sage.all import *
+from Crypto.Util.number import *
+from pwn import *
+
+def read_output():
+    fi = open('./challenge/output.txt', 'r').readlines()
+    outputs = []
+    for line in fi:
+        A, b = line[1:-2].split('] [')
+        A = [int(num[1:-1], 16) for num in A.split(', ')]
+        b = [int(num[1:-1], 16) for num in b.split(', ')]
+        outputs.append((matrix(n, n, A), vector(b)))
+    
+    return outputs
+
+q = 2**142 + 217
+n = 69
+nseeds = 142
+
+warn("=== Reading output.txt ===")
+outputs = read_output()
+info("Done!")
+
+warn("=== Finding secret vector s ===")
+
+info("Building basis...")
+A, b = outputs[0]
+I = identity_matrix(n)
+O = 0*I
+Q = q*I 
+mt = (I.augment(A.T)).stack(O.augment(Q)).stack(vector([0]*n + [-x for x in b]))
+info("Done!")
+
+info("Running LLL...")
+# s = mt.LLL()[1][:69]
+s = vector([1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1])
+info("Done!")
+warn("secret vector s = " + str(s))
+
+flag = ""
+for A, b in outputs:
+    e = b - A.change_ring(Zmod(q))*s 
+    if sum(e) < 7*n:
+        flag += "0"
+    else:
+        flag += "1"
+
+warn("Flag: " + long_to_bytes(int(flag, 2)).decode())
+```
+## Flag: 
+**`ictf{l4tt1c3_crypt0_t4k1ng_0v3r_th3_w0rld}`**
