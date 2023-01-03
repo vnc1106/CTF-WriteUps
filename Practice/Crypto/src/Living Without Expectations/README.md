@@ -8,8 +8,8 @@
 
 The script generates a secret $69$-dimension vector $s$ with elements $0$ or $1$. They encrypt the flag by looping for each bit of the flag:
 * Firstly, generate a random $69 \times 69$ matrix $A$, with elements $< q$.
-* If the flag bit is $0 \Rightarrow $ return $b = A \times s + e \text{ (mod q)}$, where $e$ is an error vector with elements $<7$
-* If the flag bit is $1 \Rightarrow $ return a random vector $b$ with elements $< q$
+* If the flag bit is $0 \Rightarrow$ return $b = A \times s + e \text{ (mod q)}$, where $e$ is an error vector with elements $<7$
+* If the flag bit is $1 \Rightarrow$ return a random vector $b$ with elements $< q$
 
 ## Solution
 

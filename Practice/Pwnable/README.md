@@ -8,3 +8,4 @@
 |   4   | `base pointer` `ret2libc` | [DownUnderCTF 2021](https://ctftime.org/event/1312) | [rbp](./src/rbp/challenge/) | :heavy_check_mark: [exp](./src/rbp/exp.py) | :x: |
 |   5   | `leak pie`               | [DownUnderCTF 2021](https://ctftime.org/event/1312) | [babygame](./src/babygame/challenge/) | :heavy_check_mark: [exp](./src/babygame/exp.py) | :x: |
 |   6   | `got overwrite`, `ropchain` | [TSG CTF 2021](https://ctftime.org/event/1431) | [coffee](./src/coffee/challenge/) | :heavy_check_mark: [exp](./src/coffee/exp.py) | :x: |
+|   7   | `got overwirte`, `bof` | [SEETF 2022](https://ctftime.org/event/1543) | [easy overflow](./src/easy_overflow/challenge/) | :heavy_check_mark: [exp](./src/easy_overflow/exp.py) | :x: |
