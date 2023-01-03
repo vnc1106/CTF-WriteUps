@@ -1,7 +1,7 @@
 # Living Without Expectations (10 solves 492 points)
 
 > **Description**\
-> `Sometimes you just gotta have some fun implementing bare hardness assumptions.`\
+> `Sometimes you just gotta have some fun implementing bare hardness assumptions.`
 >
 > **Attachmets**\
 > **[lwe.py](./challenge/lwe.py) [output.txt](./challenge/output.txt)**

@@ -56,14 +56,14 @@ Let:
 
 $$f(x) = a_n \times x^{n} + a_{n-1} \times x^{n-1} + \cdots + a_{1} \times x + a_{0}, \qquad a_{i} \in \mathbb{F}_{P} \quad \forall i \in [0, n]$$
 
-clearly that if we collect enough pairs $(x_{i}, f(x_{i}))$ (at least n + 1), we can easily recover $f(x)$ by solving this linear equation
-($n + 1$ unknown variables - $n + 1$ equations):
+clearly that if we collect enough pairs $(x_{i}, f(x_{i}))$ (at least n + 1), we can easily recover $f(x)$ by solving this linear equation ($n + 1$ unknown variables - $n + 1$ equations):
+
 $$
 \begin{cases}
-    a_n \times x_{1}^{n} &+ a_{n-1} \times x_{1}^{n-1} &+ &\cdots &+ a_{1} \times x_{1} &+ a_{0} &= y_{1} \\\\
-    a_n \times x_{2}^{n} &+ a_{n-1} \times x_{2}^{n-1} &+ &\cdots &+ a_{1} \times x_{2} &+ a_{0} &= y_{2} \\\\
-    \vdots \\\\
-    a_n \times x_{n + 1}^{n} &+ a_{n-1} \times x_{n + 1}^{n-1} &+ &\cdots &+ a_{1} \times x_{n + 1} &+ a_{0} &= y_{n}
+    a_n \times x_{1}^{n} + a_{n-1} \times x_{1}^{n-1} + \cdots + a_{1} \times x_{1} + a_{0} &= y_{1} \\\\
+    a_n \times x_{2}^{n} + a_{n-1} \times x_{2}^{n-1} + \cdots + a_{1} \times x_{2} + a_{0} &= y_{2} \\\\
+    &\vdots                                                                                            \\\\
+    a_n \times x_{n + 1}^{n} + a_{n-1} \times x_{n + 1}^{n-1} + \cdots + a_{1} \times x_{n + 1} + a_{0} &= y_{n}
 \end{cases} 
 $$
 
