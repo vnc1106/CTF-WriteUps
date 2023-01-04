@@ -11,3 +11,4 @@
 |   7   | `got overwirte`, `bof` | [SEETF 2022](https://ctftime.org/event/1543) | [easy overflow](./src/easy_overflow/challenge/) | :heavy_check_mark: [exp](./src/easy_overflow/exp.py) | :x: |
 |   8   | `ret2libc` | [hackrocks & HackArmour CTF 2022](https://ctftime.org/event/1622) | [not a baby rop](./src/not_a_baby_rop/challenge/) | :heavy_check_mark: [exp](./src/not_a_baby_rop/exp.py) | :x: |
 |   9   | `arbitrary write` | [DownUnderCTF 2021](https://ctftime.org/event/1312) | [write-what-where](./src/write-what-where/challenge/) | :heavy_check_mark: [exp](./src/write-what-where/exp.py) | :x: |
+|  10   | `SROP`, `syscall` | [24h@CTF 2022](https://ctftime.org/event/1563) | [loop](./src/loop/challenge/) | :heavy_check_mark: [exp](./src/loop/exp.py) | :x: |
