@@ -1,5 +1,7 @@
 # Practice pwnable
 
+## Old Contest
+
 | S.No. | Tags                        | Contest                                    | Challenge     | Exploit script | WriteUp |
 |-------|:---------------------------:|:------------------------------------------:|:-------------:|:--------------:|:-------:|
 |   1   | `ret2libc` | [DiceCTF 2022](https://ctftime.org/event/1541) |  [interview-opportunity](./src/interview-opportunity/challenge/) | :heavy_check_mark: [exp](./src/interview-opportunity/exp.py) | :x: |
@@ -13,3 +15,14 @@
 |   9   | `arbitrary write` | [DownUnderCTF 2021](https://ctftime.org/event/1312) | [write-what-where](./src/write-what-where/challenge/) | :heavy_check_mark: [exp](./src/write-what-where/exp.py) | :x: |
 |  10   | `SROP`, `syscall` | [24h@CTF 2022](https://ctftime.org/event/1563) | [loop](./src/loop/challenge/) | :heavy_check_mark: [exp](./src/loop/exp.py) | :x: |
 |  11   | `ropchain`, `got overwrite`, `integer` | [Secccon CTF 2021](https://ctftime.org/event/1458) | [Average Calculator](./src/average/challenge/) | :heavy_check_mark: [exp](./src/average/exp.py) | :x: |
+
+## ImaginaryCTF Archived Challenges
+
+[see here](https://imaginaryctf.org/ArchivedChallenges/)
+
+| S.No. | Tags                        | Date                                    | Challenge     | Exploit script | WriteUp |
+|-------|:---------------------------:|:------------------------------------------:|:-------------:|:--------------:|:-------:|
+|   1   | `ret2win` | April 2021 | [ret2win](./src/ictf/ret2win/challenge/) | :heavy_check_mark: [exp](./src/ictf/ret2win/exp.py) | :x: |
+|   2   | `got overwrite`, `sh` | April 2021 | [The GOAT](./src/ictf/the_goat/challenge/) | :heavy_check_mark: [exp](./src/ictf/the_goat/exp.py) | :x: |
+|   3   | `format string`, `canary` | April 2021 | [canaries](./src/ictf/canaries/challenge/) | :heavy_check_mark: [exp](./src/ictf/canaries/exp.py) | :x: |
+|   4   | `ret2libc`, `rand` | April 2021 | [Librarian](./src/ictf/librarian/challenge/) | :heavy_check_mark: [exp](./src/ictf/librarian/exp.py) | :x: |
