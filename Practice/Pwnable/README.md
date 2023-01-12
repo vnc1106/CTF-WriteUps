@@ -28,6 +28,7 @@
 |   4   | `ret2libc`, `rand` | April 2021 | [Librarian](./src/ictf/librarian/challenge/) | :heavy_check_mark: [exp](./src/ictf/librarian/exp.py) | :x: |
 |   5   | `ret2libc`, `canary` | May 2021 | [Librarian2](./src/ictf/librarian2/challenge/) | :heavy_check_mark: [exp](./src/ictf/librarian2/exp.py) | :x: |
 |   6   | `ret2libc`, `canary`, `pie` | May 2021 | [Librarian3](./src/ictf/librarian3/challenge/) | :heavy_check_mark: [exp](./src/ictf/librarian3/exp.py) | :x: |
+|   7   | `syscall` | May 2021 | [syscall me maybe](./src/ictf/syscall_me_maybe/challenge/) | :heavy_check_mark: [exp](./src/ictf/syscall_me_maybe/exp.py) | :x: |
 
 ## Exploit Education
 
