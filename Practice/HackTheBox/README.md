@@ -8,6 +8,7 @@
 * [Restaurant](./Pwnable/Restaurant/)
 * [Sick ROP](./Pwnable/Sick%20ROP/)
 * [You know 0xD](./Pwnable/You%20know%200xDiablos/)
+* [Bad grades](./Pwnable/bad_grades/)
 
 ## Crypto
 
